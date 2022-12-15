@@ -1,0 +1,29 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+%btn {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.btn {
+  @include buttonTheme($colors);
+  @extend %btn;
+}
+
+@include mq-width('tablet', min) {
+  %btn {
+    padding: 10px 30px;
+
+    &.btn {
+      margin-left: 10px;
+    }
+  }
+}
