@@ -19,12 +19,17 @@
   border-radius: 5px;
 }
 
+.card {
+  flex-basis: 100%;
+}
+
 // Grid color class generator
 @include gridTheme($grid-map);
 
 
 .centered {
   display: block;
+  width: 100%;
   @include margin-inline;
 }
 

@@ -401,7 +401,7 @@ a {
   .btn {
     padding: 10px 30px;
   }
-  .btn {
+  .btn + .btn {
     margin-left: 10px;
   }
 }
@@ -485,7 +485,7 @@ a {
 
 .img-frame {
   margin-top: 10px;
-  padding: 0.75rem;
+  padding: 13px;
   border: 1px solid #ccc;
 }
 
@@ -514,6 +514,10 @@ a {
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
+}
+
+.card {
+  flex-basis: 100%;
 }
 
 .col-1.theme {
@@ -566,6 +570,7 @@ a {
 
 .centered {
   display: block;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
